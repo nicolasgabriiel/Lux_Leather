@@ -26,7 +26,8 @@ body {
     font-family: Pacifico, cursive;
 }
 
-#sobre-o-restaurante, #cardapio {
+#sobre-o-restaurante,
+#cardapio {
     background-color: #e4fcfc;
 }
 
@@ -57,31 +58,35 @@ body {
 
 
 
-  #produtos img{
+#produtos img {
     max-height: 275px;
-  }
-  #produtos h5,
-  #produtos p{
+}
+
+#produtos h5,
+#produtos p {
     text-align: center;
-  }
+}
 
 @media (max-width: 767px) {
     .carousel-item img {
         max-height: 280px;
-
-
     }
+    #produtos img {
+        max-height: 1000px;
+    }
+   
+}
 
-    .container-img{
+@media (min-width: 768px){
+    .container-img {
         width: 100%;
         max-height: 235px;
         object-fit: cover;
     }
 
     .container-img img {
-        max-width: 100%; /* Ajusta a largura da imagem para caber no container */
+        width: 100%;
         max-height: 235px;
-        display: block; /* Remove espaços extras abaixo da imagem */
-        margin: 0 auto; /* Centraliza a imagem dentro do container */
-      }
+        display: block;
+    }
 }
