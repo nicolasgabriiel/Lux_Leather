@@ -3,12 +3,12 @@ body {
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: #24a7aa;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #e15f41;
+    color: #24a7aa;
 }
 
 #cabecalho .nav .nav-link,
@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #ffeae6;
+    background-color: #e4fcfc;
 }
 
 .section-title {
@@ -27,21 +27,21 @@ body {
 }
 
 #sobre-o-restaurante, #cardapio {
-    background-color: #ffeae6;
+    background-color: #e4fcfc;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: #24a7aa;
 }
 
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #e15f41;
+    background-color: #24a7aa;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
-    color: #e15f41;
+    color: #24a7aa;
 }
 
 .social-links li {
@@ -53,8 +53,35 @@ body {
     text-decoration: none;
 }
 
+
+
+
+
+  #produtos img{
+    max-height: 275px;
+  }
+  #produtos h5,
+  #produtos p{
+    text-align: center;
+  }
+
 @media (max-width: 767px) {
     .carousel-item img {
-        height: 280px;
+        max-height: 280px;
+
+
     }
+
+    .container-img{
+        width: 100%;
+        max-height: 235px;
+        object-fit: cover;
+    }
+
+    .container-img img {
+        max-width: 100%; /* Ajusta a largura da imagem para caber no container */
+        max-height: 235px;
+        display: block; /* Remove espaços extras abaixo da imagem */
+        margin: 0 auto; /* Centraliza a imagem dentro do container */
+      }
 }
